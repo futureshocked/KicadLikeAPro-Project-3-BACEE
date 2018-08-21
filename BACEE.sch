@@ -3,7 +3,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 1 2
 Title "BACEE: Battery powered Arduino clone with Extended EEPROM"
 Date "2018-08-20"
 Rev "2"
@@ -176,4 +176,10 @@ F 3 "" H 3550 3150 50  0001 C CNN
 	1    3550 3150
 	1    0    0    -1  
 $EndComp
+$Sheet
+S 2150 5450 950  1100
+U 5B7FDE14
+F0 "Connectors" 50
+F1 "Connectors.sch" 50
+$EndSheet
 $EndSCHEMATC
