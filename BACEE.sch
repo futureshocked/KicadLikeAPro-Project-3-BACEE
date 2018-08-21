@@ -181,5 +181,36 @@ S 2150 5450 950  1100
 U 5B7FDE14
 F0 "Connectors" 50
 F1 "Connectors.sch" 50
+F2 "GND" I L 2150 5650 50 
+F3 "Vcc" I L 2150 5800 50 
+F4 "SDA" B L 2150 5950 50 
+F5 "SCK" B L 2150 6100 50 
 $EndSheet
+$Comp
+L power:GND #PWR?
+U 1 1 5B7FEA2F
+P 1550 5750
+F 0 "#PWR?" H 1550 5500 50  0001 C CNN
+F 1 "GND" H 1555 5577 50  0000 C CNN
+F 2 "" H 1550 5750 50  0001 C CNN
+F 3 "" H 1550 5750 50  0001 C CNN
+	1    1550 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 5750 1550 5650
+Wire Wire Line
+	1550 5650 2150 5650
+Wire Wire Line
+	2150 5800 1900 5800
+Wire Wire Line
+	2150 5950 1900 5950
+Wire Wire Line
+	2150 6100 1900 6100
+Text Label 1900 5800 2    50   ~ 0
+Vcc
+Text Label 1900 5950 2    50   ~ 0
+SDA
+Text Label 1900 6100 2    50   ~ 0
+SCK
 $EndSCHEMATC
