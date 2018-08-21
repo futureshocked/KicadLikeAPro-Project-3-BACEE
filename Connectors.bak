@@ -32,4 +32,48 @@ Text HLabel 5050 3600 2    50   BiDi ~ 0
 SDA
 Text HLabel 5050 3700 2    50   BiDi ~ 0
 SCK
+$Comp
+L Connector:Conn_01x04_Male J?
+U 1 1 5B7FECBD
+P 7050 1500
+F 0 "J?" H 7156 1778 50  0000 C CNN
+F 1 "Conn_01x04_Male" H 7156 1687 50  0000 C CNN
+F 2 "" H 7050 1500 50  0001 C CNN
+F 3 "~" H 7050 1500 50  0001 C CNN
+	1    7050 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x09_Male J?
+U 1 1 5B7FEDEF
+P 7050 2500
+F 0 "J?" H 7156 3078 50  0000 C CNN
+F 1 "Conn_01x09_Male" H 7156 2987 50  0000 C CNN
+F 2 "" H 7050 2500 50  0001 C CNN
+F 3 "~" H 7050 2500 50  0001 C CNN
+	1    7050 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x04_Male J?
+U 1 1 5B7FEE85
+P 8100 1450
+F 0 "J?" H 8206 1728 50  0000 C CNN
+F 1 "Conn_01x04_Male" H 8206 1637 50  0000 C CNN
+F 2 "" H 8100 1450 50  0001 C CNN
+F 3 "~" H 8100 1450 50  0001 C CNN
+	1    8100 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x03_Odd_Even J?
+U 1 1 5B7FEF30
+P 8150 2450
+F 0 "J?" H 8200 2767 50  0000 C CNN
+F 1 "Conn_02x03_Odd_Even" H 8200 2676 50  0000 C CNN
+F 2 "" H 8150 2450 50  0001 C CNN
+F 3 "~" H 8150 2450 50  0001 C CNN
+	1    8150 2450
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
