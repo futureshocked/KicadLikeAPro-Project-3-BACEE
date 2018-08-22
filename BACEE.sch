@@ -17,8 +17,8 @@ $Comp
 L Peters_library:DS1337S+ U2
 U 1 1 5B7FD1F4
 P 2900 1900
-F 0 "U2" H 2900 2528 50  0000 C CNN
-F 1 "DS1337S+" H 2900 2437 50  0000 C CNN
+F 0 "U2" H 3250 2350 50  0000 C CNN
+F 1 "DS1337S+" H 2500 2350 50  0000 C CNN
 F 2 "Package_SO:SO-8_5.3x6.2mm_P1.27mm" H 2900 2000 50  0001 C CNN
 F 3 "" H 2900 2000 50  0001 C CNN
 	1    2900 1900
@@ -28,8 +28,8 @@ $Comp
 L Memory_EEPROM:24LC1025 U1
 U 1 1 5B7FD31C
 P 2400 4150
-F 0 "U1" H 2400 4628 50  0000 C CNN
-F 1 "24LC1025" H 2400 4537 50  0000 C CNN
+F 0 "U1" H 2650 4450 50  0000 C CNN
+F 1 "24LC1025" H 2050 4450 50  0000 C CNN
 F 2 "Package_SO:SOIJ-8_5.3x5.3mm_P1.27mm" H 2400 4150 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21941B.pdf" H 2400 4150 50  0001 C CNN
 	1    2400 4150
@@ -39,8 +39,8 @@ $Comp
 L Memory_EEPROM:24LC1025 U3
 U 1 1 5B7FD368
 P 3900 4150
-F 0 "U3" H 3900 4628 50  0000 C CNN
-F 1 "24LC1025" H 3900 4537 50  0000 C CNN
+F 0 "U3" H 4150 4450 50  0000 C CNN
+F 1 "24LC1025" H 3550 4450 50  0000 C CNN
 F 2 "Package_SO:SOIJ-8_5.3x5.3mm_P1.27mm" H 3900 4150 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21941B.pdf" H 3900 4150 50  0001 C CNN
 	1    3900 4150
@@ -319,7 +319,7 @@ Wire Wire Line
 Text Label 6000 4300 2    50   ~ 0
 Vcc
 Wire Wire Line
-	9450 1350 7800 1350
+	9450 1350 8850 1350
 Connection ~ 7800 1350
 Wire Wire Line
 	2450 1700 2100 1700
@@ -400,4 +400,94 @@ Wire Wire Line
 	7700 4800 7800 4800
 Wire Wire Line
 	7700 4800 7700 4850
+NoConn ~ 3350 1700
+Text Label 3350 1900 0    50   ~ 0
+SCK
+Text Label 2800 4150 0    50   ~ 0
+SCK
+Text Label 4300 4150 0    50   ~ 0
+SCK
+Text Label 3350 2100 0    50   ~ 0
+SDA
+Text Label 2800 4050 0    50   ~ 0
+SDA
+Text Label 4300 4050 0    50   ~ 0
+SDA
+Text Label 2000 4050 2    50   ~ 0
+ADDS1
+Text Label 3500 4050 2    50   ~ 0
+ADDS1
+Text Label 2000 4150 2    50   ~ 0
+ADDS2
+Text Label 3500 4150 2    50   ~ 0
+ADDS2
+$Comp
+L power:GND #PWR?
+U 1 1 5B8142A1
+P 2900 2600
+F 0 "#PWR?" H 2900 2350 50  0001 C CNN
+F 1 "GND" H 2905 2427 50  0000 C CNN
+F 2 "" H 2900 2600 50  0001 C CNN
+F 3 "" H 2900 2600 50  0001 C CNN
+	1    2900 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 2350 2900 2600
+Text Label 2900 1300 0    50   ~ 0
+Vcc
+Wire Wire Line
+	2900 1450 2900 1300
+Text Label 2450 2100 2    50   ~ 0
+Vcc
+Text Label 2000 4250 2    50   ~ 0
+Vcc
+Text Label 3500 4250 2    50   ~ 0
+Vcc
+Text Label 2400 3650 2    50   ~ 0
+Vcc
+Wire Wire Line
+	2400 3850 2400 3650
+Wire Wire Line
+	3900 3850 3900 3650
+Text Label 3900 3650 2    50   ~ 0
+Vcc
+Wire Wire Line
+	2400 4450 2400 4600
+Wire Wire Line
+	2400 4600 3150 4600
+Wire Wire Line
+	3900 4600 3900 4450
+$Comp
+L power:GND #PWR?
+U 1 1 5B81A59B
+P 3150 4700
+F 0 "#PWR?" H 3150 4450 50  0001 C CNN
+F 1 "GND" H 3155 4527 50  0000 C CNN
+F 2 "" H 3150 4700 50  0001 C CNN
+F 3 "" H 3150 4700 50  0001 C CNN
+	1    3150 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 4700 3150 4600
+Connection ~ 3150 4600
+Wire Wire Line
+	3150 4600 3900 4600
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5B81BD18
+P 8850 1200
+F 0 "#FLG?" H 8850 1275 50  0001 C CNN
+F 1 "PWR_FLAG" H 8850 1374 50  0000 C CNN
+F 2 "" H 8850 1200 50  0001 C CNN
+F 3 "~" H 8850 1200 50  0001 C CNN
+	1    8850 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8850 1200 8850 1350
+Connection ~ 8850 1350
+Wire Wire Line
+	8850 1350 7800 1350
 $EndSCHEMATC
