@@ -1,4 +1,4 @@
-update=Wed 22 Aug 2018 05:01:31 PM PDT
+update=Tue 28 Aug 2018 07:07:47 PM PDT
 version=1
 last_client=kicad
 [general]
@@ -25,7 +25,7 @@ ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=/home/peter/Documents/Kicad projects/KLP2/Common files/TechExplorationsCustomSheetLayout.kicad_wks
-LastNetListRead=
+LastNetListRead=BACEE_extended.net
 PadDrill=0.762
 PadDrillOvalY=0.762
 PadSizeH=1.524
