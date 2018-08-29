@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
+LIBS:BACEE-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 2
+Sheet 1 3
 Title "BACEE: Battery powered Arduino clone with Extended EEPROM"
 Date "2018-08-20"
 Rev "2"
@@ -615,4 +616,39 @@ Wire Notes Line
 	5300 4650 2500 4650
 Text Notes 3150 4600 2    50   ~ 0
 Connectors sheet
+$Sheet
+S 3550 6550 900  850 
+U 5B8601B5
+F0 "prototyping_area" 50
+F1 "prototyping_area.sch" 50
+F2 "GND" I L 3550 6750 50 
+F3 "5V" I L 3550 7050 50 
+$EndSheet
+Text Label 3450 7050 2    50   ~ 0
+Vcc
+$Comp
+L power:GND #PWR0106
+U 1 1 5B867438
+P 3450 6750
+F 0 "#PWR0106" H 3450 6500 50  0001 C CNN
+F 1 "GND" H 3455 6577 50  0000 C CNN
+F 2 "" H 3450 6750 50  0001 C CNN
+F 3 "" H 3450 6750 50  0001 C CNN
+	1    3450 6750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3550 6750 3450 6750
+Wire Wire Line
+	3550 7050 3450 7050
+Wire Notes Line
+	5300 6450 2500 6450
+Wire Notes Line
+	2500 6450 2500 7500
+Wire Notes Line
+	2500 7500 5300 7500
+Wire Notes Line
+	5300 7500 5300 6450
+Text Notes 3150 6400 2    50   ~ 0
+Prototyping area
 $EndSCHEMATC
