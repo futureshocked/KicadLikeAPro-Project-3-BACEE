@@ -90,17 +90,6 @@ F 3 "~" H 6150 2500 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:CP1 C3
-U 1 1 5B7FD83B
-P 9450 2650
-F 0 "C3" H 9565 2696 50  0000 L CNN
-F 1 "10uF" H 9565 2605 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9450 2650 50  0001 C CNN
-F 3 "~" H 9450 2650 50  0001 C CNN
-	1    9450 2650
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R1
 U 1 1 5B7FD90B
 P 6100 3600
@@ -651,4 +640,15 @@ Wire Notes Line
 	5300 7500 5300 6450
 Text Notes 3150 6400 2    50   ~ 0
 Prototyping area
+$Comp
+L Device:CP C3
+U 1 1 5BA01A54
+P 9450 2650
+F 0 "C3" H 9568 2696 50  0000 L CNN
+F 1 "CP" H 9568 2605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9488 2500 50  0001 C CNN
+F 3 "~" H 9450 2650 50  0001 C CNN
+	1    9450 2650
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
