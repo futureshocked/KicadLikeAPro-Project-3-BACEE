@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:BACEE-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -135,12 +136,12 @@ Wire Notes Line
 	6600 4250 6600 3500
 Wire Notes Line
 	6600 3500 5500 3500
-Text Notes 3900 2100 2    50   ~ 0
-I2C connector
-Text Notes 6250 2050 2    50   ~ 0
-Serial connector
-Text Notes 3950 3200 2    50   ~ 0
-GPIO connector
-Text Notes 6050 3450 2    50   ~ 0
-SPI connector
+Text Notes 4100 2150 2    50   ~ 0
+N5 - I2C connector
+Text Notes 6500 2075 2    50   ~ 0
+N6 - Serial connector
+Text Notes 4175 3225 2    50   ~ 0
+N7 - GPIO connector
+Text Notes 6275 3475 2    50   ~ 0
+N8 - SPI connector
 $EndSCHEMATC

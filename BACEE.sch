@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:BACEE-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -71,7 +72,7 @@ L Device:C C1
 U 1 1 5B7FD778
 P 6150 1950
 F 0 "C1" V 5898 1950 50  0000 C CNN
-F 1 "22pF" V 5989 1950 50  0000 C CNN
+F 1 "22 pF" V 5989 1950 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6188 1800 50  0001 C CNN
 F 3 "~" H 6150 1950 50  0001 C CNN
 	1    6150 1950
@@ -82,29 +83,18 @@ L Device:C C2
 U 1 1 5B7FD7CA
 P 6150 2500
 F 0 "C2" V 5898 2500 50  0000 C CNN
-F 1 "22pF" V 5989 2500 50  0000 C CNN
+F 1 "22 pF" V 5989 2500 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6188 2350 50  0001 C CNN
 F 3 "~" H 6150 2500 50  0001 C CNN
 	1    6150 2500
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:CP1 C3
-U 1 1 5B7FD83B
-P 9450 2650
-F 0 "C3" H 9565 2696 50  0000 L CNN
-F 1 "10uF" H 9565 2605 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9450 2650 50  0001 C CNN
-F 3 "~" H 9450 2650 50  0001 C CNN
-	1    9450 2650
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R1
 U 1 1 5B7FD90B
 P 6100 3600
 F 0 "R1" H 6030 3554 50  0000 R CNN
-F 1 "330Ohm" H 6030 3645 50  0000 R CNN
+F 1 "330 Ω" H 6030 3645 50  0000 R CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6030 3600 50  0001 C CNN
 F 3 "~" H 6100 3600 50  0001 C CNN
 	1    6100 3600
@@ -115,7 +105,7 @@ L Device:R R2
 U 1 1 5B7FD977
 P 6900 4150
 F 0 "R2" H 6970 4196 50  0000 L CNN
-F 1 "10kOhm" H 6970 4105 50  0000 L CNN
+F 1 "10 kΩ" H 6970 4105 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6830 4150 50  0001 C CNN
 F 3 "~" H 6900 4150 50  0001 C CNN
 	1    6900 4150
@@ -137,7 +127,7 @@ L Device:Crystal Y1
 U 1 1 5B7FDADF
 P 2700 1650
 F 0 "Y1" V 2746 1519 50  0000 R CNN
-F 1 "Crystal32768KHz" V 2655 1519 50  0000 R CNN
+F 1 "Crystal 32768 kHz" V 2655 1519 50  0000 R CNN
 F 2 "Crystal:Crystal_SMD_MicroCrystal_CC7V-T1A-2Pin_3.2x1.5mm_HandSoldering" H 2700 1650 50  0001 C CNN
 F 3 "~" H 2700 1650 50  0001 C CNN
 	1    2700 1650
@@ -583,8 +573,8 @@ Wire Notes Line
 	5450 5200 10750 5200
 Wire Notes Line
 	10750 5200 10750 950 
-Text Notes 7150 900  2    50   ~ 0
-Atmega328P-PU with oscillator and battery
+Text Notes 7375 925  2    50   ~ 0
+N2 - Atmega328P-PU with oscillator and battery
 Wire Notes Line
 	2500 950  2500 2800
 Wire Notes Line
@@ -601,10 +591,10 @@ Wire Notes Line
 	5300 4500 5300 3000
 Wire Notes Line
 	5300 3000 2500 3000
-Text Notes 3100 900  2    50   ~ 0
-Clock/Calendar
-Text Notes 2800 2950 2    50   ~ 0
-EEPROM
+Text Notes 3325 925  2    50   ~ 0
+N1 - Clock/Calendar
+Text Notes 3025 3000 2    50   ~ 0
+N3 - EEPROM
 Wire Notes Line
 	2500 4650 2500 6200
 Wire Notes Line
@@ -613,6 +603,17 @@ Wire Notes Line
 	5300 6200 5300 4650
 Wire Notes Line
 	5300 4650 2500 4650
-Text Notes 3150 4600 2    50   ~ 0
-Connectors sheet
+Text Notes 3375 4650 2    50   ~ 0
+N4 - Connectors sheet
+$Comp
+L Device:CP C3
+U 1 1 5BA040EC
+P 9450 2650
+F 0 "C3" H 9568 2696 50  0000 L CNN
+F 1 "10 uF" H 9568 2605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9488 2500 50  0001 C CNN
+F 3 "~" H 9450 2650 50  0001 C CNN
+	1    9450 2650
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
