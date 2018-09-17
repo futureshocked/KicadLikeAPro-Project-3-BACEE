@@ -1,4 +1,4 @@
-update=Wed 22 Aug 2018 05:01:31 PM PDT
+update=Mon 17 Sep 2018 03:17:50 PM PDT
 version=1
 last_client=kicad
 [general]
@@ -12,16 +12,6 @@ NetIExt=net
 version=1
 LibDir=
 [eeschema/libraries]
-[schematic_editor]
-version=1
-PageLayoutDescrFile=/home/peter/Documents/Kicad projects/KLP2/Common files/TechExplorationsCustomSheetLayout.kicad_wks
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceAjustPassiveValues=0
-LabSize=50
-ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=/home/peter/Documents/Kicad projects/KLP2/Common files/TechExplorationsCustomSheetLayout.kicad_wks
@@ -41,3 +31,13 @@ SolderMaskMinWidth=0
 DrawSegmentWidth=0.2
 BoardOutlineThickness=0.15
 ModuleOutlineThickness=0.15
+[schematic_editor]
+version=1
+PageLayoutDescrFile=/home/peter/Documents/Kicad projects/KLP2/Common files/TechExplorationsCustomSheetLayout.kicad_wks
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceAjustPassiveValues=0
+LabSize=50
+ERC_TestSimilarLabels=1

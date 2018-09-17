@@ -104,44 +104,12 @@ Text HLabel 6150 2600 2    50   Input ~ 0
 RX
 Text HLabel 6150 2700 2    50   Output ~ 0
 TX
-Wire Notes Line
-	3350 2150 3350 2950
-Wire Notes Line
-	3350 2950 4300 2950
-Wire Notes Line
-	4300 2950 4300 2150
-Wire Notes Line
-	4300 2150 3350 2150
-Wire Notes Line
-	3350 3250 3350 4450
-Wire Notes Line
-	3350 4450 4300 4450
-Wire Notes Line
-	4300 4450 4300 3250
-Wire Notes Line
-	4300 3250 3350 3250
-Wire Notes Line
-	5650 2100 5650 2900
-Wire Notes Line
-	5650 2900 6500 2900
-Wire Notes Line
-	6500 2900 6500 2100
-Wire Notes Line
-	6500 2100 5650 2100
-Wire Notes Line
-	5500 3500 5500 4250
-Wire Notes Line
-	5500 4250 6600 4250
-Wire Notes Line
-	6600 4250 6600 3500
-Wire Notes Line
-	6600 3500 5500 3500
-Text Notes 4100 2150 2    50   ~ 0
+Text Notes 4175 2050 2    50   ~ 0
 N5 - I2C connector
 Text Notes 6500 2075 2    50   ~ 0
 N6 - Serial connector
-Text Notes 4175 3225 2    50   ~ 0
+Text Notes 4225 3200 2    50   ~ 0
 N7 - GPIO connector
-Text Notes 6275 3475 2    50   ~ 0
+Text Notes 6425 3425 2    50   ~ 0
 N8 - SPI connector
 $EndSCHEMATC
