@@ -349,7 +349,7 @@ Wire Notes Line
 Wire Notes Line
 	6250 2350 4050 2350
 Text Notes 2350 2300 0    50   ~ 0
-Power rails
+N6 - Power rails
 Text Notes 4050 2300 0    50   ~ 0
-Prototyping pads
+N7 - Prototyping pads
 $EndSCHEMATC
