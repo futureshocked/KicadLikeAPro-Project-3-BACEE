@@ -3,7 +3,7 @@
     (string_quote ")
     (space_in_quoted_tokens on)
     (host_cad "KiCad's Pcbnew")
-    (host_version "5.0.0-fee4fd1~66~ubuntu18.04.1")
+    (host_version "5.0.2-bee76a0~70~ubuntu18.04.1")
   )
   (resolution um 10)
   (unit um)
@@ -61,16 +61,13 @@
       (place BT1 98552 -96012 front 0 (PN "Battery 3V"))
     )
     (component Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder
-      (place C1 123952 -109728 front 0 (PN 22pF))
-      (place C3 135128 -109728 front 0 (PN 10uF))
-      (place R2 118364 -109728 front 0 (PN 10kOhm))
+      (place C1 123952 -109728 front 0 (PN "22 pF"))
+      (place C3 135128 -109728 front 0 (PN "10 uF"))
+      (place R2 118364 -109728 front 0 (PN "10 kΩ"))
     )
     (component Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder::1
-      (place C2 129540 -109728 front 0 (PN 22pF))
-      (place R1 112776 -109728 front 0 (PN 330Ohm))
-    )
-    (component LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder
-      (place D1 107188 -109728 front 0 (PN LED))
+      (place C2 129540 -109728 front 0 (PN "22 pF"))
+      (place R1 112776 -109728 front 0 (PN "330 Ω"))
     )
     (component Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical
       (place J2 101092 -113284 front 90 (PN "I2C connector"))
@@ -97,10 +94,18 @@
       (place U4 120396 -102108 front 0 (PN "ATMEGA328P-AU"))
     )
     (component "Crystal:Crystal_SMD_MicroCrystal_CC7V-T1A-2Pin_3.2x1.5mm_HandSoldering"
-      (place Y1 108712 -96520 front 0 (PN Crystal32768KHz))
+      (place Y1 108712 -96520 front 0 (PN "Crystal 32768 kHz"))
     )
     (component "Crystal:Crystal_SMD_5032-2Pin_5.0x3.2mm_HandSoldering"
       (place Y2 120650 -92964 front 0 (PN "Crystal 16MHz"))
+    )
+    (component "Custom libraries:TE_LOGO_URL_v2"
+      (place G*** 128016 -97790 back 0 (PN LOGO))
+      (place LOGO_OSHW_silkscreen_2mm 99568 -92456 front 0 (PN val**))
+      (place REF** 105918 -102870 back 90 (PN "KiCad-Logo2_8mm_SilkScreen"))
+    )
+    (component LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder
+      (place DS1 107179 -109728 front 0 (PN LED))
     )
   )
   (library
@@ -150,22 +155,6 @@
       (outline (path signal 100  -1000 -600  -1000 600))
       (pin RoundRect[T]Pad_1150x1400_250.95_um 2 1025 0)
       (pin RoundRect[T]Pad_1150x1400_250.95_um 1 -1025 0)
-    )
-    (image LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder
-      (outline (path signal 100  1000 600  -700 600))
-      (outline (path signal 100  -700 600  -1000 300))
-      (outline (path signal 100  -1000 300  -1000 -600))
-      (outline (path signal 100  -1000 -600  1000 -600))
-      (outline (path signal 100  1000 -600  1000 600))
-      (outline (path signal 120  1000 960  -1860 960))
-      (outline (path signal 120  -1860 960  -1860 -960))
-      (outline (path signal 120  -1860 -960  1000 -960))
-      (outline (path signal 50  -1850 -950  -1850 950))
-      (outline (path signal 50  -1850 950  1850 950))
-      (outline (path signal 50  1850 950  1850 -950))
-      (outline (path signal 50  1850 -950  -1850 -950))
-      (pin RoundRect[T]Pad_1150x1400_250.95_um 1 -1025 0)
-      (pin RoundRect[T]Pad_1150x1400_250.95_um 2 1025 0)
     )
     (image Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical
       (outline (path signal 50  1800 1800  -1800 1800))
@@ -437,6 +426,24 @@
       (pin Rect[T]Pad_3500x2400_um 1 -2600 0)
       (pin Rect[T]Pad_3500x2400_um 2 2600 0)
     )
+    (image "Custom libraries:TE_LOGO_URL_v2"
+    )
+    (image LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder
+      (outline (path signal 100  1000 600  -700 600))
+      (outline (path signal 100  -700 600  -1000 300))
+      (outline (path signal 100  -1000 300  -1000 -600))
+      (outline (path signal 100  -1000 -600  1000 -600))
+      (outline (path signal 100  1000 -600  1000 600))
+      (outline (path signal 120  1000 960  -1860 960))
+      (outline (path signal 120  -1860 960  -1860 -960))
+      (outline (path signal 120  -1860 -960  1000 -960))
+      (outline (path signal 50  -1850 -950  -1850 950))
+      (outline (path signal 50  -1850 950  1850 950))
+      (outline (path signal 50  1850 950  1850 -950))
+      (outline (path signal 50  1850 -950  -1850 -950))
+      (pin RoundRect[T]Pad_1150x1400_250.95_um 1 -1025 0)
+      (pin RoundRect[T]Pad_1150x1400_250.95_um 2 1025 0)
+    )
     (padstack Oval[A]Pad_1700x1700_um
       (shape (path F.Cu 1700  0 0  0 0))
       (shape (path B.Cu 1700  0 0  0 0))
@@ -493,12 +500,8 @@
   )
   (network
     (net /Vcc
-      (pins BT1-1 C3-1 J2-2 J3-9 J4-2 J5-2 R2-2 U1-3 U1-8 U2-3 U2-8 U3-8 U3-3 U4-4
-        U4-6 U4-18 U4-20)
-    )
-    (net GND
-      (pins BT1-2 C1-2 C2-2 C3-2 J2-1 J3-8 J4-1 J5-6 R1-1 U1-4 U1-7 U2-4 U3-7 U3-4
-        U4-3 U4-5 U4-21)
+      (pins BT1-1 C3-1 J2-2 J3-9 J4-2 J5-2 R2-2 U1-1 U1-2 U1-3 U1-8 U2-3 U2-8 U3-8
+        U3-3 U3-1 U4-4 U4-6 U4-18 U4-20)
     )
     (net "Net-(C1-Pad1)"
       (pins C1-1 U4-7 Y2-1)
@@ -506,11 +509,8 @@
     (net "Net-(C2-Pad1)"
       (pins C2-1 U4-8 Y2-2)
     )
-    (net "Net-(D1-Pad1)"
-      (pins D1-1 R1-2)
-    )
     (net /SCK
-      (pins D1-2 J2-4 J5-3 U1-6 U2-6 U3-6 U4-17)
+      (pins J2-4 J5-3 U1-6 U2-6 U3-6 U4-17 DS1-2)
     )
     (net /SDA
       (pins J2-3 U1-5 U2-5 U3-5 U4-27)
@@ -552,10 +552,10 @@
       (pins J5-5 R2-1 U4-29)
     )
     (net /ADDS1
-      (pins U1-1 U3-1 U4-23)
+      (pins U4-23)
     )
     (net /ADDS2
-      (pins U1-2 U3-2 U4-24)
+      (pins U4-24)
     )
     (net "Net-(U2-Pad1)"
       (pins U2-1 Y1-2)
@@ -587,11 +587,18 @@
     (net "Net-(U4-Pad28)"
       (pins U4-28)
     )
+    (net GNDPWR
+      (pins BT1-2 C1-2 C2-2 C3-2 J2-1 J3-8 J4-1 J5-6 R1-1 U1-4 U1-7 U2-4 U3-7 U3-4
+        U3-2 U4-3 U4-5 U4-21)
+    )
+    (net "Net-(DS1-Pad1)"
+      (pins R1-2 DS1-1)
+    )
     (class kicad_default "" /ADDS1 /ADDS2 /D2 /D3 /D4 /D5 /D6 /D7 /D8 /MISO
-      /MOSI /RESET /RX /SCK /SDA /TX /Vcc GND "Net-(C1-Pad1)" "Net-(C2-Pad1)"
-      "Net-(D1-Pad1)" "Net-(U2-Pad1)" "Net-(U2-Pad2)" "Net-(U2-Pad7)" "Net-(U4-Pad13)"
-      "Net-(U4-Pad14)" "Net-(U4-Pad19)" "Net-(U4-Pad22)" "Net-(U4-Pad25)"
-      "Net-(U4-Pad26)" "Net-(U4-Pad28)"
+      /MOSI /RESET /RX /SCK /SDA /TX /Vcc GND GNDPWR "Net-(C1-Pad1)" "Net-(C2-Pad1)"
+      "Net-(D1-Pad1)" "Net-(DS1-Pad1)" "Net-(U2-Pad1)" "Net-(U2-Pad2)" "Net-(U2-Pad7)"
+      "Net-(U4-Pad13)" "Net-(U4-Pad14)" "Net-(U4-Pad19)" "Net-(U4-Pad22)"
+      "Net-(U4-Pad25)" "Net-(U4-Pad26)" "Net-(U4-Pad28)"
       (circuit
         (use_via Via[0-1]_800:400_um)
       )
