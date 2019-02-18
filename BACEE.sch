@@ -303,10 +303,6 @@ Text Label 7650 3100 2    50   ~ 0
 MISO
 Text Label 7650 3200 2    50   ~ 0
 SCK
-Text Label 7650 3300 2    50   ~ 0
-ADDS1
-Text Label 7650 3400 2    50   ~ 0
-ADDS2
 Text Label 7650 3700 2    50   ~ 0
 SDA
 Text Label 7650 3900 2    50   ~ 0
@@ -319,7 +315,6 @@ Text Label 7650 4200 2    50   ~ 0
 D2
 NoConn ~ 7650 2800
 NoConn ~ 7650 2900
-NoConn ~ 7650 3500
 NoConn ~ 7650 3600
 NoConn ~ 7650 3800
 NoConn ~ 7650 4300
@@ -350,14 +345,6 @@ Text Label 3600 3600 0    50   ~ 0
 SDA
 Text Label 5100 3600 0    50   ~ 0
 SDA
-Text Label 2800 3600 2    50   ~ 0
-ADDS1
-Text Label 4300 3600 2    50   ~ 0
-ADDS1
-Text Label 2800 3700 2    50   ~ 0
-ADDS2
-Text Label 4300 3700 2    50   ~ 0
-ADDS2
 Wire Wire Line
 	4100 2200 4100 2450
 Text Label 4100 1150 0    50   ~ 0
@@ -365,10 +352,6 @@ Vcc
 Wire Wire Line
 	4100 1300 4100 1150
 Text Label 3650 1950 2    50   ~ 0
-Vcc
-Text Label 2800 3800 2    50   ~ 0
-Vcc
-Text Label 4300 3800 2    50   ~ 0
 Vcc
 Text Label 3200 3200 2    50   ~ 0
 Vcc
@@ -653,4 +636,21 @@ Wire Wire Line
 	3000 6750 3000 6825
 Wire Wire Line
 	3000 6750 3550 6750
+NoConn ~ 7650 3500
+NoConn ~ 7650 3400
+NoConn ~ 7650 3300
+Text Label 3590 4150 0    50   ~ 0
+GND
+Text Label 2800 3600 2    50   ~ 0
+Vcc
+Text Label 2800 3700 2    50   ~ 0
+Vcc
+Text Label 2800 3800 2    50   ~ 0
+Vcc
+Text Label 4300 3600 2    50   ~ 0
+Vcc
+Text Label 4300 3800 2    50   ~ 0
+Vcc
+Text Label 4300 3700 2    50   ~ 0
+GND
 $EndSCHEMATC
