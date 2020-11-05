@@ -295,7 +295,7 @@ D2
 NoConn ~ 7650 2800
 NoConn ~ 7650 2900
 NoConn ~ 7650 3505
-NoConn ~ 7650 3600
+NoConn ~ 7650 3800
 NoConn ~ 7650 4300
 NoConn ~ 7650 4500
 Wire Wire Line
@@ -614,6 +614,6 @@ F 12 "Active" H 8350 4500 60  0001 L CNN "Status"
 $EndComp
 Text Label 7650 3700 2    50   ~ 0
 SDA
-Text Label 7650 3800 2    50   ~ 0
+Text Label 7650 3600 2    50   ~ 0
 SCL
 $EndSCHEMATC
